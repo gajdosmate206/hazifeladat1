@@ -1,14 +1,20 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Kereso({ kereses }) {
 const [szuro, setSzuro] = useState("");
-const szurtKereses = szuro.kereses(keres => keres.toLowerCase().includes(filter.toLowerCase()));
+const [szurtKereses, setSzurtKereses] = useState(kereses);
+useEffect (() => {
+    setSzurtKereses(
+        kereses.filter(item => item.toLowerCase().includes(szuro.toLowerCase())
+        )
+    );
+}, [szuro, kereses]);
   return (
     <>
      <input
         type="text"
         placeholder="Keresés..."
-        value={kereses}
+        value={szuro}
         onChange={(e) => setSzuro(e.target.value)}
       />
 

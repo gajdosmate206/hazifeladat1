@@ -6,7 +6,7 @@ const filmnevek = ["Venom", "Star wars", "Nagyfiúk 2", "Másnaposok", "Fák jú
     <>
      <div>
       <h2>Film kereső</h2>
-      <Search kereses={filmnevek} />
+      <Kereso kereses={filmnevek} />
     </div>
     </>
   )
