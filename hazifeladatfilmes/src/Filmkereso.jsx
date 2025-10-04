@@ -1,3 +1,5 @@
+import Kereso from "./Kereso";
+
 function Filmkereso() {
 const filmnevek = ["Venom", "Star wars", "Nagyfiúk 2", "Másnaposok", "Fák jú, Tanár úr!"];
   return (
