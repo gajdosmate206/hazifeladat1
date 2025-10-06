@@ -1,7 +1,7 @@
 import Kereso from "./Kereso";
 
 function Konyvkereso() {
-const konyvcimek = ["Metro 2033", "Egri Csillagok", "Pál utcai fiúk", "Meinkampf", "Légy jó mindhalálig"]
+const konyvcimek = ["Metro 2033", "Egri Csillagok", "Pál utcai fiúk", "Az ember tragédiája", "Légy jó mindhalálig"]
   return (
     <>
     <div>
